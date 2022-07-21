@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+
+//chamando as variaveis do variaveis.scss
+@import './dist/scss/variaveis.scss';
+
+//import da font
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+body{
+  background-color: $primary-background-color;
+}
+
+ul{
+  list-style: none;
+}
+
+.container{
+  width: 350px;
+  margin: 50px auto;
+}
+
+textarea:focus, input:focus, button{
+  outline: none;
+}
+
+button{
+  cursor: pointer;
+}
